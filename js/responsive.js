@@ -3,16 +3,13 @@ var loca = document.getElementById("location")
 var vk = false
 
 loca.ontouchstart = function () {
+    loca.focus();
     document.getElementsByClassName("header")[0].style.display = "none";
     document.getElementsByClassName("footer")[0].style.display = "none";
     document.getElementById("calendar_btn").style.display = "none";
     document.getElementsByClassName("container_santa")[0].style.justifyContent = "start";
     document.getElementsByClassName("inputs")[0].style.marginTop = "2vh";
-    
-    sleep(200)
 
-    loca.focus();
-    console.log("debug");
     A = true;
 }
 
