@@ -104,6 +104,8 @@ function CountdownTracker(label, value){
   
 
   function createClock(timeend){
+    reDisp()
+    
     var parentNode = document.getElementsByClassName("container_santa")[0];
     const clocks = Array.from(document.getElementsByClassName('flip-clock'));
     clocks.forEach(clock => { clock.remove(); });
