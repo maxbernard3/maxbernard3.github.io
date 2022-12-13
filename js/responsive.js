@@ -13,14 +13,14 @@ loca.ontouchstart = function () {
     A = true;
 }
 
-window.onresize = function () {
+/* window.onresize = function () {
     if(vk){
         document.getElementsByClassName("header")[0].style.display = "flex";
         document.getElementById("calendar_btn").style.display ="flex";
         document.getElementsByClassName("footer")[0].style.display = "flex";
         document.getElementsByClassName("container_santa")[0].style.justifyContent = "center";
     } 
-}
+} */
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
