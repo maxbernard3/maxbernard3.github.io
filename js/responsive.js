@@ -8,7 +8,7 @@ loca.ontouchstart = function () {
     document.getElementById("calendar_btn").style.display = "none";
     //document.getElementsByClassName("container_santa")[0].style.justifyContent = "start";
     //document.getElementsByClassName("inputs")[0].style.marginTop = "2vh";
-    loca.focus();
+    //loca.focus();
     A = true;
 }
 
