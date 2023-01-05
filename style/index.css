@@ -1,58 +1,94 @@
+:root {
+    --highlight: yellow;
+    --bg: beige;
+    --margin: black;
+}
+
 body{
     margin: 0%;
-}
-
-#side-img {
-    width: 15vh;
-    max-width: 40vw;
-    padding-left: 1vw;
-}
-.side-txt {
-    font-size: 3vh;
-}
-@media (min-aspect-ratio: 1/1) {
-    #side-img {
-        width: 15vw;
-    }
-    .side-txt {
-        font-size: 3vw;
-    }
-}
-
-.width {
-    width: 100%;
+    display: grid;
+    grid-template-areas:
+      'header'
+      'main';
+    background-color: var(--bg);
 }
 
 header{
-    background-color: rgb(255, 191, 0);
-    width: 100%;
-    height: 50px;
+    grid-area: header;
+    display: grid;
+    justify-content: right;
+    background-color: var(--highlight);
+    grid-template-areas:
+        'menu lang';
+    gap: 1vw;
+    padding-right: 1vw;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--margin);
+}
+header>p{
+    font-size: 25px;
 }
 
-.head-select {
-    float: right;
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    font-size: 100%;
+#main{
+    background-color: var(--bg);
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    'about portfolio'
 }
 
-.side-by-side{
-    padding-top: 2vh;
-    padding-left: 2vw;
-    display: flex;
-    justify-content: left;
-}
-
-.border{
-    display: flex;
-    border-radius: 1vw;
+#about{
+    margin-left: 15px;
+    margin-top: 15px;
+    grid-area: about;
+    display: grid;
+    gap: 0.5vh;
+    background-color: var(--highlight);
+    grid-template-areas:
+    'pic me';
+    width: 50vw;
+    border-width: 3px;
     border-style: solid;
-    border-color: blue;
-    border-width: 1vw;
-    justify-content: left;
-    padding: 2vh;
+    border-color: var(--margin);
 }
 
-.dl-img{
-    height: 2vh;
+#mypic{
+    margin: 10px;
+    height: 40vh;
+    grid-area: pic;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--margin);
+    border-radius: 20vh;
+}
+
+.me{
+    grid-area: me;
+    margin-right: 15px;
+}
+
+#portfolio{
+    grid-area: portfolio;
+    width: 40vw;
+    background-color: var(--highlight);
+    margin-left: 15px;
+    margin-top: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--margin);
+    display: grid;
+    grid-template-areas:
+    'certif proj';
+}
+
+.port-div{
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--margin);
+}
+
+li{
+    list-style-type: none;
 }
