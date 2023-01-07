@@ -1,7 +1,8 @@
 :root {
-    --highlight: yellow;
-    --bg: beige;
+    --highlight: rgb(244, 195, 255);
+    --bg: rgb(246, 253, 255);
     --margin: black;
+    --headerSize: 90px
 }
 
 body{
@@ -19,15 +20,56 @@ header{
     justify-content: right;
     background-color: var(--highlight);
     grid-template-areas:
-        'menu lang';
+        'menu eng fra';
     gap: 1vw;
     padding-right: 1vw;
     border-bottom-width: 5px;
     border-bottom-style: solid;
     border-bottom-color: var(--margin);
+    font-size: 25px;
+    height: var(--headerSize);
 }
 header>p{
-    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+header>p>img{
+    width: 70px;
+    height: 40px;
+}
+
+#menu{
+    margin-right: 10px;
+    padding: 10px;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: var(--margin);
+}
+
+#contact{
+    display: none;
+    padding: 10px;
+    background-color: var(--highlight);
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--margin);
+    position: absolute;
+    right: 0;
+    top: var(--headerSize);
+    margin: 0;
+}
+
+#contact>li{
+    padding: 2px;
+    padding-right: 10px;
+}
+
+#menu:hover #contact{
+    display: block;
+}
+
+#contact:hover #contact{
+    display: block;
 }
 
 #main{
@@ -35,7 +77,7 @@ header>p{
     grid-area: main;
     display: grid;
     grid-template-areas:
-    'about portfolio'
+    'about portfolio';
 }
 
 #about{
@@ -84,11 +126,15 @@ header>p{
 
 .port-div{
     padding: 10px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--margin);
+}
+
+#cert{
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-right-color: var(--margin);
 }
 
 li{
     list-style-type: none;
 }
+
