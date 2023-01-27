@@ -124,6 +124,14 @@ header>p>img{
     'certif proj';
 }
 
+@media max-width: 1100px {
+    #portfolio{
+        grid-template-areas:
+        'certif'
+        'proj';
+    }
+}
+
 .port-div{
     padding: 10px;
 }
