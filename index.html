@@ -8,93 +8,200 @@
 </head>
 
 <body>
-    <header>
-        <div grid-area="menu" id="menu">
-            <p>Contacts</p>
-            <ul id="contact">
-                <li>
-                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/maxbernard3" target="_blank">GitHub</a>
-                </li>
-                <li>
-                    <a href="mailto:max@notmail.com">max@notmail.com</a>
-                </li>
-                <li>
-                    <a href="tel:631">+** 6 ** ** ** 31</a>
-                </li>
+    <div id="center">
+        <header>
+            <h1 class="title"><b>Max</b> BERNARD</h1>
+            <ul class="menu">
+                <li class="curent" id="about-li">About Me</li>
+                <li id="resume-li">Resume</li>
+                <li id="portfolio-li">Portfolio</li>
+                <li id="contact-li">Contact</li>
+                <li><img src="./image/fra.png" alt="FR" id="lang"></li>
             </ul>
-        </div>
-        </div>
-        <p grid-area="eng"><img src="./image/eng.png"></p>
-        <p grid-area="fra"><img src="./image/fra.png"></p>
-    </header>
-    <div id="main">
-        <div id="about">
-            <img id="mypic" src="./image/Max_BERNARD.jpg" alt="My picture">
-            <div class="me">
-                <h1>Max BERNARD</h1>
-                <h2>developer and stuff</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nisi praesentium nobis
-                    exercitationem
-                    laboriosam minus. Non quas est dolorem nemo maiores fugit consectetur, harum, at assumenda rem,
-                    beatae sunt incidunt!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus neque dolorum sequi. Dignissimos
-                    ipsum veniam tempora enim facilis, rerum aliquam provident excepturi eaque sequi assumenda fugiat
-                    alias, officia exercitationem similique.
+        </header>
+        <div id="aboutme">
+            <img src="./image/Max_BERNARD.jpg" alt="MaxBernard" id="portrait">
+            <div id="aboutme-text">
+                <p id="title">Software Developer</p>
+                <p id="name">Max BERNARD</p>
+                <p id="main-p">
+                    I'm a software developer with a who went to ALGOSUP. My experience includes working with Embedded
+                    systems, specifically Arduino and Intel Cyclone IV, as well as projects involving .Net 6 in C# and
+                    F#, Python3, and Go. I'm adaptable and a fast learner, always eager to take on new challenges and
+                    expand my skill set. With fluency in both French and English, I'm comfortable working in
+                    multicultural environments and collaborating with people from different backgrounds.
                 </p>
             </div>
         </div>
-
-        <div id="portfolio">
-            <div class="port-div" id="cert" grid-area="certif">
-                <h3>Certification</h3>
+        <div id="resume">
+            <div class="subdiv">
+                <h3>Degrees and Education</h3>
                 <ul>
-                    <li class="certif">
-                        <p>python</p>
-                    </li>
-                    <li class="certif">
-                        <p>tensorflow</p>
-                    </li>
-                    <li class="certif">
-                        <p>docker</p>
-                    </li>
+                    <li>2020 : Baccalauréat - Sience & Engineering</li>
+                    <li>2020-2023 : ALGOSUP - Software Architecture</li>
                 </ul>
             </div>
-            <div class="port-div" grid-area="proj">
-                <h3>Project showcase</h3>
+            <div class="subdiv">
+                <h3>Professional Experience</h3>
                 <ul>
-                    <li class="expl">
-                        <a href="https://github.com/" target="_blank">
-                            <p>YT-2-MP3</p>
-                        </a>
+                    <li>2020 : Agri-Food Industry Worker</li>
+                    <li>2021 : Fast-Food Worker </li>
+                    <li>2022 : Castle Tour Guide </li>
+                    <li>2023 : Room attendant</li>
+                </ul>
+            </div>
+            <div class="subdiv">
+                <h3>Skills</h3>
+                <ul>
+                    <li>English C1</li>
+                    <li>French C2</li>
+                    <li>Experiences with the folowing languages :<ul>
+                            <li>C#</li>
+                            <li>F#</li>
+                            <li>Python 3</li>
+                            <li>C++</li>
+                            <li>Java Script</li>
+                            <li>Type Script</li>
+                        </ul>
                     </li>
-                    <li class="expl">
-                        <a href="https://github.com/" target="_blank">
-                            <p>Sonar Classification</p>
-                        </a>
+                    <li>Experiences with the folowing technologies :<ul>
+                            <li>Angular</li>
+                            <li>.Net 6</li>
+                            <li>Unity</li>
+                            <li>Unreal Engine</li>
+                        </ul>
                     </li>
-                    <li class="expl">
-                        <a href="https://github.com/" target="_blank">
-                            <p>ISA calculator</p>
-                        </a>
-                    </li>
-                    <li class="expl">
-                        <a href="https://github.com/" target="_blank">
-                            <p>Tonk game</p>
-                        </a>
-                    </li>
-                    <li class="expl">
-                        <a href="https://github.com/" target="_blank">
-                            <p>This website</p>
-                        </a>
-                    </li>
+                    <li>Mac OS, Windows & Linux-Debian experience</li>
+                    <li>Research & Curation</li>
+                </ul>
+            </div>
+            <div class="subdiv">
+                <h3>My Qualities</h3>
+                <ul>
+                    <li>Profetional</li>
+                    <li>Adaptable</li>
+                    <li>Team Worker</li>
+                </ul>
+            </div>
+            <div class="subdiv">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Reading</li>
+                    <li>Classic Automobile</li>
+                    <li>Automating Tasks</li>
                 </ul>
             </div>
         </div>
+        <div id="portfolio">
+            <div class="subcenter">
+                <p class="intro">Welcome to my portfolio! Here you will find a collection of my GitHub repositories,
+                    showcasing my skills and experience as a software developer. These projects cover a range of
+                    programming
+                    languages and frameworks, including .NET, Python, and Go.</p>
+                <table id="portfolioTable">
+                    <thead>
+                        <tr>
+                            <th class="porth">Name</th>
+                            <th class="porth"></th>
+                            <th class="porth">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="port"><a href="https://github.com/maxbernard3/International_Standard_Atmosphere"
+                                    target="_blank">International Standard Atmosphere</a></td>
+                            <td class="port"><a href="https://github.com/maxbernard3/International_Standard_Atmosphere"
+                                    target="_blank"><img src="./image/github.png" alt="git" class="gitimg"></a></td>
+                            <td class="port">This is a C# program that calculates air properties with altitude using the
+                                International
+                                Standard Atmosphere model.</td>
+                        </tr>
+                        <tr>
+                            <td class="port"><a href="https://github.com/algosup/2022-Project-Artificial-Intelligence-Group-B"
+                                    target="_blank">Voice recognition AI</a>
+                            </td>
+                            <td class="port"><a href="https://github.com/algosup/2022-Project-Artificial-Intelligence-Group-B"
+                                    target="_blank"><img src="./image/github.png" alt="git" class="gitimg"></a></td>
+                            <td class="port">This is an AI program that recognizes English speech, including the code used for
+                                generating the dataset.</td>
+                        </tr>
+                        <tr>
+                            <td class="port"><a href="https://github.com/Louis-de-Lavenne-de-Choulot/ALGOSUP_2022_Project_4_F"
+                                    target="_blank">VR Preview</a>
+                            </td>
+                            <td class="port"><a href="https://github.com/Louis-de-Lavenne-de-Choulot/ALGOSUP_2022_Project_4_F"
+                                    target="_blank"><img src="./image/github.png" alt="git" class="gitimg"></a></td>
+                            <td class="port">This is a VR simulation of a school where student NPCs move according to their
+                                schedules.</td>
+                        </tr>
+                        <tr>
+                            <td class="port"><a href="https://github.com/maxbernard3/YT-to-MP3" target="_blank">YT to MP3</a>
+                            </td>
+                            <td class="port"><a href="https://github.com/maxbernard3/YT-to-MP3" target="_blank"><img
+                                        src="./image/github.png" alt="git" class="gitimg"></a></td>
+                            <td class="port">This is a Python console app that downloads YouTube videos, converts them to MP3, and
+                                sorts
+                                them by artist if recognized as music.</td>
+                        </tr>
+                        <tr>
+                            <td class="port"><a href="https://github.com/algosup/2022-2023-project-4-game-design-Team-7"
+                                    target="_blank">Space Form</a>
+                            </td>
+                            <td class="port"><a href="https://github.com/algosup/2022-2023-project-4-game-design-Team-7"
+                                    target="_blank"><img src="./image/github.png" alt="git" class="gitimg"></a></td>
+                            <td class="port">This is a platformer game created with Unreal Engine 4.</td>
+                        </tr>
+                        <tr>
+                            <td class="port"><a href="https://github.com/algosup/2022-2023-project-2-santa-time-Project-7-group"
+                                    target="_blank">Santa Time</a>
+                            </td>
+                            <td class="port"><a href="https://github.com/algosup/2022-2023-project-2-santa-time-Project-7-group"
+                                    target="_blank"><img src="./image/github.png" alt="git" class="gitimg"></a></td>
+                            <td class="port">This is an Azure-hosted database and website for predicting Santa's arrival time, which
+                                is now offline due to budget constraints.</td>
+                        </tr>
+                        <tr>
+                            <td class="port"><a href="https://github.com/algosup/2022-2023-project-1-smart-signage-Project-8-group"
+                                    target="_blank">Smart Signage</a>
+                            </td>
+                            <td class="port"><a href="https://github.com/algosup/2022-2023-project-1-smart-signage-Project-8-group"
+                                    target="_blank"><img src="./image/github.png" alt="git" class="gitimg"></a></td>
+                            <td class="port">This is a prototype program for a company that wanted to uses LORA signal and an Arduino
+                                to remotely control LEDs.</td>
+                        </tr>
+                        <tr>
+                            <td class="port"><a href="https://github.com/maxbernard3/Unity-Tank-Game" target="_blank">Unity Tank
+                                    Game</a>
+                            </td>
+                            <td class="port"><a href="https://github.com/maxbernard3/Unity-Tank-Game" target="_blank"><img
+                                        src="./image/github.png" alt="git" class="gitimg"></a></td>
+                            <td class="port">A Unity-made game where you play as a tank.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="contact">
+            <table id="contTable">
+                <tbody>
+                    <tr>
+                        <td class="cont"><a href="https://github.com/maxbernard3/" target="_blank"><img src="./image/github.png" class="icon"></a></td>
+                        <td class="cont"><a href="https://github.com/maxbernard3/" target="_blank">GitHub / maxbernard3</a></td>
+                    </tr>
+                    <tr>
+                        <td class="cont"><a href="mailto:max.bernard_@hotmail.com" target="_blank"><img src="./image/email.png" class="icon"></a></td>
+                        <td class="cont"><a href="mailto:max.bernard_@hotmail.com" target="_blank">Email / max.bernard_@hotmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <td class="cont"><a href="https://www.linkedin.com/in/max-bernard-b77680210/" target="_blank"><img src="./image/in.png" class="icon"></a></td>
+                        <td class="cont"><a href="https://www.linkedin.com/in/max-bernard-b77680210/" target="_blank">LinkedIn / max-bernard</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
+
+<script src="./script/react.js"></script>
 
 </html>
