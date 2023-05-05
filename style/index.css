@@ -144,17 +144,17 @@ table#portfolioTable {
     border-collapse: collapse;
 }
 
-table#portfolioTable td,
-table#portfolioTable th {
+.port,
+.porth {
     border: 1.5px solid black;
     padding: 8px;
 }
 
-table#portfolioTable td {
+.port {
     text-align: left;
 }
 
-table#portfoliotable td>a {
+.port>a {
     text-decoration: none;
     color: #000;
     display: block;
@@ -162,22 +162,22 @@ table#portfoliotable td>a {
     padding: 8px;
 }
 
-table#portfoliotable td:nth-child(1):hover{
+.port:nth-child(1):hover{
     text-decoration: underline;
 }
 
-table#portfoliotable th {
+.porth {
     text-align: center;
 }
 
-table#portfoliotable td:nth-child(2),
-table#portfoliotable th:nth-child(2) {
+.port:nth-child(2),
+.porth:nth-child(2) {
     border-left-style: none;
     padding: 0;
 }
 
-table#portfoliotable td:nth-child(1),
-table#portfoliotable th:nth-child(1) {
+.port:nth-child(1),
+.porth:nth-child(1) {
     border-right-style: none;
     padding: 0;
 }
@@ -185,4 +185,29 @@ table#portfoliotable th:nth-child(1) {
 #contact {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.cont>a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.cont>a:hover {
+    text-decoration: underline;
+}
+
+.contTable {
+    border-collapse: collapse;
 }
