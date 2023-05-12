@@ -31,6 +31,8 @@ function contact() {
     portf.style.display = "none";
     about.style.display = "none";
     conta.style.display = "flex";
+
+    menu.style.display = "none";
 };
 
 function resume() {
@@ -48,6 +50,8 @@ function resume() {
     portf.style.display = "none";
     about.style.display = "none";
     conta.style.display = "none";
+
+    menu.style.display = "none";
 };
 
 function aboutF() {
@@ -65,6 +69,8 @@ function aboutF() {
     portf.style.display = "none";
     about.style.display = "flex";
     conta.style.display = "none";
+
+    menu.style.display = "none";
 };
 
 function portfolio() {
@@ -82,6 +88,8 @@ function portfolio() {
     portf.style.display = "flex";
     about.style.display = "none";
     conta.style.display = "none";
+
+    menu.style.display = "none";
 }; 
 
 contaBtn.onclick = contact;

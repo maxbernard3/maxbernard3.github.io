@@ -18,6 +18,12 @@ body {
     flex-direction: column;
 }
 
+a:visited {
+    color: #6b6b6b;
+}
+
+/* -------------- Header ----------------------*/
+
 header {
     font-size: 25px;
     display: flex;
@@ -83,6 +89,8 @@ ul#menu>li:hover {
     display: none;
 }
 
+/* -------------- About Me ----------------------*/
+
 #portrait {
     height: 300px;
     border-radius: 50%;
@@ -112,6 +120,8 @@ ul#menu>li:hover {
     font-weight: bold;
 }
 
+/* -------------- Resume ----------------------*/
+
 #resume {
     margin-top: 30px;
     display: flex;
@@ -128,6 +138,8 @@ ul#menu>li:hover {
     margin: 0;
     padding: 0;
 }
+
+/* -------------- Portfolio ----------------------*/
 
 #portfolio {
     display: flex;
@@ -190,6 +202,8 @@ table#portfolioTable {
     padding: 0;
 }
 
+/* -------------- Contact ----------------------*/
+
 #contact {
     display: flex;
     justify-content: center;
@@ -220,15 +234,22 @@ table#portfolioTable {
     border-collapse: collapse;
 }
 
+/* -------------------------------------------------*/
+/* ------------------ Responive --------------------*/
+/* -------------------------------------------------*/
+
+
+/* ------------------ Vertical Phone --------------------*/
 @media (max-aspect-ratio: 8/10) {
     body {
-        background-color: red;
+        background-color: rgb(67, 161, 228);
     }
 
     #center {
         border-width: 5px;
     }
 
+    /* ------------------ Header --------------------*/
     ul#menu {
         display: none;
     }
@@ -245,12 +266,17 @@ table#portfolioTable {
     }
 
     #dropdownmenu>li {
-        margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         font-size: 50px;
         display: block;
-        margin-right: 15px;
-        margin-left: 15px;
         justify-content: center;
+    }
+
+    #dropdownmenu>li.curent {
+        background-color: lightgray;
     }
 
     .title {
@@ -284,10 +310,94 @@ table#portfolioTable {
     #colapsed img {
         height: 60px;
     }
+
+    /* ------------------ About Me --------------------*/
+
+    #aboutme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 35px;
+    }
+
+    #aboutme-text{
+        width: 70%;
+    }
+
+    #portrait {
+        height: 450px;
+        width: 450px;
+        border-radius: 50%;
+        border-style: double;
+        border-color: black;
+        border-width: 10px;
+        background-color: white;
+    }
+
+    /* ------------------ Resume --------------------*/
+
+    #resume {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subdiv {
+        border-left-style: none;
+        border-top-style: solid;
+        margin-top: 20px;
+        border-width: 3px;
+    }
+    
+    .subdiv>ul {
+        margin: 0;
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .subdiv h3 {
+        font-size: 35px;
+    }
+
+    /* -------------- Portfolio ----------------------*/
+    
+    .subcenter {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+    }
+
+    .porth {
+        border-width: 3px;
+    }
+
+    .port {
+        text-align: left;
+        border-width: 3px;
+    }
+
+    .gitimg {
+        height: 60px;
+        width: 60px;
+    }
+
+    /* -------------- Contact ----------------------*/
+
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .cont>a {
+        font-size: 35px;
+    }
 }
+
+
+/* ------------------ Horizontal Phone --------------------*/
 
 @media (min-aspect-ratio: 10/5) {
     body {
-        background-color: green;
+        background-color: rgb(67, 161, 228);
     }
 }

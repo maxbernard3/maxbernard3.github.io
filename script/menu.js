@@ -1,5 +1,5 @@
-btn = document.getElementById("colapsed");
-menu = document.getElementById("dropdownmenu");
+const btn = document.getElementById("colapsed");
+const menu = document.getElementById("dropdownmenu");
 
 var a = new Boolean(true);
 
