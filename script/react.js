@@ -1,23 +1,31 @@
-about = document.getElementById("aboutme");
-resum = document.getElementById("resume");
-portf = document.getElementById("portfolio");
-conta = document.getElementById("contact");
+const about = document.getElementById("aboutme");
+const resum = document.getElementById("resume");
+const portf = document.getElementById("portfolio");
+const conta = document.getElementById("contact");
 
-aboutBtn = document.getElementById("about-li");
-resumBtn = document.getElementById("resume-li");
-portfBtn = document.getElementById("portfolio-li");
-contaBtn = document.getElementById("contact-li");
+const aboutBtn = document.getElementById("about-li");
+const resumBtn = document.getElementById("resume-li");
+const portfBtn = document.getElementById("portfolio-li");
+const contaBtn = document.getElementById("contact-li");
+const aboutBtn2 = document.getElementById("about-li2");
+const resumBtn2 = document.getElementById("resume-li2");
+const portfBtn2 = document.getElementById("portfolio-li2");
+const contaBtn2 = document.getElementById("contact-li2");
 
 resum.style.display = "none";
 portf.style.display = "none";
-conta.style.display = "none"
+conta.style.display = "none";
 
-
-contaBtn.onclick = function(){
+function contact() {
     aboutBtn.classList.remove("curent");
     portfBtn.classList.remove("curent");
     resumBtn.classList.remove("curent");
     contaBtn.classList.add("curent");
+
+    aboutBtn2.classList.remove("curent");
+    portfBtn2.classList.remove("curent");
+    resumBtn2.classList.remove("curent");
+    contaBtn2.classList.add("curent");
 
     resum.style.display = "none";
     portf.style.display = "none";
@@ -25,11 +33,16 @@ contaBtn.onclick = function(){
     conta.style.display = "flex";
 };
 
-resumBtn.onclick = function(){
+function resume() {
     aboutBtn.classList.remove("curent");
     portfBtn.classList.remove("curent");
     resumBtn.classList.add("curent");
     contaBtn.classList.remove("curent");
+
+    aboutBtn2.classList.remove("curent");
+    portfBtn2.classList.remove("curent");
+    resumBtn2.classList.add("curent");
+    contaBtn2.classList.remove("curent");
 
     resum.style.display = "flex";
     portf.style.display = "none";
@@ -37,26 +50,48 @@ resumBtn.onclick = function(){
     conta.style.display = "none";
 };
 
-aboutBtn.onclick = function(){
+function aboutF() {
     aboutBtn.classList.add("curent");
     portfBtn.classList.remove("curent");
     resumBtn.classList.remove("curent");
     contaBtn.classList.remove("curent");
 
+    aboutBtn2.classList.add("curent");
+    portfBtn2.classList.remove("curent");
+    resumBtn2.classList.remove("curent");
+    contaBtn2.classList.remove("curent");
+
     resum.style.display = "none";
     portf.style.display = "none";
     about.style.display = "flex";
     conta.style.display = "none";
-}; 
+};
 
-portfBtn.onclick = function(){
+function portfolio() {
     aboutBtn.classList.remove("curent");
     portfBtn.classList.add("curent");
     resumBtn.classList.remove("curent");
     contaBtn.classList.remove("curent");
+
+    aboutBtn2.classList.remove("curent");
+    portfBtn2.classList.add("curent");
+    resumBtn2.classList.remove("curent");
+    contaBtn2.classList.remove("curent");
 
     resum.style.display = "none";
     portf.style.display = "flex";
     about.style.display = "none";
     conta.style.display = "none";
 }; 
+
+contaBtn.onclick = contact;
+contaBtn2.onclick = contact;
+
+resumBtn.onclick = resume;
+resumBtn2.onclick = resume;
+
+aboutBtn.onclick = aboutF;
+aboutBtn2.onclick = aboutF;
+
+portfBtn.onclick = portfolio;
+portfBtn2.onclick = portfolio;
