@@ -11,13 +11,23 @@
     <div id="center">
         <header>
             <h1 class="title"><b>Max</b> BERNARD</h1>
-            <ul class="menu">
+            <ul id="menu">
                 <li class="curent" id="about-li">About Me</li>
                 <li id="resume-li">Resume</li>
                 <li id="portfolio-li">Portfolio</li>
                 <li id="contact-li">Contact</li>
                 <li><a href="./fr.html"><img src="./image/fra.webp" alt="FR" id="lang"></a></li>
             </ul>
+            <div id="colapsedParent">
+                <a href="./fr.html"><img src="./image/fra.webp" alt="FR" id="lang"></a>
+                <button id="colapsed"><img src="./image/menu.webp"></button>
+                <ul id="dropdownmenu" style="display: none;">
+                    <li class="curent" id="about-li2">About Me</li>
+                    <li id="resume-li2">Resume</li>
+                    <li id="portfolio-li2">Portfolio</li>
+                    <li id="contact-li2">Contact</li>
+                </ul>
+            </div>
         </header>
         <div id="aboutme">
             <img src="./image/Max_BERNARD.webp" alt="MaxBernard" id="portrait">
@@ -223,5 +233,6 @@
     </div>
 </body>
 <script src="./script/react.js"></script>
+<script src="./script/menu.js"></script>
 
 </html>
